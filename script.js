@@ -85,8 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     const typingText = document.getElementById('typing-text');
     const roles = [
-        "Software Development Engineer Intern",
+        "Software Developer",
         "Deep Learning Researcher",
+        "GenAI Enthusiast",
         "Competitive Programmer"
     ];
     
