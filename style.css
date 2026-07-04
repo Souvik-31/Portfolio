@@ -500,7 +500,6 @@ a {
 }
 
 .education-card {
-    margin-top: 2rem;
     border-left: 4px solid var(--accent-cyan);
     border-radius: 4px 16px 16px 4px;
 }
@@ -557,14 +556,20 @@ a {
     margin-bottom: 0.5rem;
 }
 
+.profiles-section {
+    background: #050816;
+}
+
 .profile-subtitle {
     color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .profiles-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .profile-card {
@@ -589,6 +594,15 @@ a {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.05);
 }
+
+.profile-icon svg {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .profile-name {
     font-size: 1.1rem;
@@ -880,6 +894,10 @@ a {
 /* ==========================================================================
    ACHIEVEMENTS SECTION
    ========================================================================== */
+.achievements-section {
+    background: #080b17;
+}
+
 .achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
