@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Souvik Sarkar - Software Development Engineer Intern & Deep Learning Researcher. Explore my work in full-stack, AI, and competitive programming.">
+    <title>Souvik Sarkar | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=3">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <!-- Radial Glowing Mouse Follower Background -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>Souvik<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h5 class="hero-greeting">Hi, my name is</h5>
+                <h1 class="hero-title">Souvik Sarkar</h1>
+                <h2 class="hero-subtitle">I am a <span class="txt-rotate" id="typing-text"></span></h2>
+                <p class="hero-desc">
+                    B.Tech Computer Science and Engineering student at NIT Durgapur. Specializing in building scalable full-stack applications, designing robust automation agents, and researching deep learning models.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary" id="cta-projects">View Projects</a>
+                    <a href="SouvikSarkar_Resume.pdf" class="btn btn-secondary" id="cta-resume" download>Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/souvik31" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/souvik-sarkar-31" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:souvik.sarkar3103@gmail.com" class="social-icon" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="avatar-glow"></div>
+                <div class="avatar-frame">
+                    <img src="assets/tech_avatar.jpg" alt="Souvik Sarkar Avatar" class="tech-avatar" id="tech-avatar">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse-wheel"></span>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-grid">
+                <div class="about-details">
+                    <p class="about-paragraph">
+                        I am currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> at the <strong>National Institute of Technology Durgapur</strong> (Batch of 2023 - 2027). With a deep passion for problem solving, I bridge the gap between robust software architecture and advanced deep learning research.
+                    </p>
+                    <p class="about-paragraph">
+                        My expertise spans developing autonomous intelligent agents, scaling full-stack platforms, and designing novel neural network architectures. I thrive in fast-paced environments, optimizing execution queues, and pushing the boundaries of machine learning accuracy.
+                    </p>
+
+                    <!-- Education Detail -->
+                    <div class="education-card glass-card">
+                        <div class="education-header">
+                            <span class="edu-icon">🎓</span>
+                            <div>
+                                <h3 class="edu-degree">B.Tech. in Computer Science and Engineering</h3>
+                                <h4 class="edu-inst">National Institute of Technology Durgapur</h4>
+                            </div>
+                        </div>
+                        <div class="edu-meta">
+                            <span class="edu-year">2023 — 2027</span>
+                            <span class="edu-location">Durgapur, West Bengal</span>
+                        </div>
+                        <div class="edu-cgpa-wrapper">
+                            <div class="cgpa-badge">CGPA: 8.66</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coding Profiles / Stats -->
+                <div class="coding-profiles">
+                    <h3 class="subsection-title">Coding Profiles</h3>
+                    <p class="profile-subtitle">Solved over 1000+ problems across various competitive coding platforms:</p>
+                    
+                    <div class="profiles-grid">
+                        <!-- LeetCode -->
+                        <a href="https://leetcode.com/souvik31" target="_blank" rel="noopener noreferrer" class="profile-card glass-card leetcode">
+                            <div class="profile-card-header">
+                                <span class="profile-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.777 9.778a1.375 1.375 0 0 0 0 1.945l1.945 1.945a1.375 1.375 0 0 0 1.945 0l7.833-7.833 1.945 1.945a1.375 1.375 0 0 0 1.945 0l9.777-9.778A1.375 1.375 0 0 0 22.5 0H13.483zm-6.84 15.658a1.375 1.375 0 0 0-1.945 0L.414 20.14a1.375 1.375 0 0 0 0 1.945l1.945 1.945a1.375 1.375 0 0 0 1.945 0l4.339-4.339-1.945-1.945z"/></svg>
+                                </span>
+                                <h4 class="profile-name">LeetCode</h4>
+                            </div>
+                            <div class="profile-badge">Knight ⚔️</div>
+                            <div class="profile-rating">Max Rating: <strong>1853</strong></div>
+                        </a>
+
+                        <!-- CodeChef -->
+                        <a href="https://www.codechef.com/users/souvik_31" target="_blank" rel="noopener noreferrer" class="profile-card glass-card codechef">
+                            <div class="profile-card-header">
+                                <span class="profile-icon">⭐</span>
+                                <h4 class="profile-name">CodeChef</h4>
+                            </div>
+                            <div class="profile-badge">3-Star ⭐⭐⭐</div>
+                            <div class="profile-rating">Max Rating: <strong>1743</strong></div>
+                        </a>
+
+                        <!-- Codeforces -->
+                        <a href="https://codeforces.com/profile/souvik_31" target="_blank" rel="noopener noreferrer" class="profile-card glass-card codeforces">
+                            <div class="profile-card-header">
+                                <span class="profile-icon">📊</span>
+                                <h4 class="profile-name">Codeforces</h4>
+                            </div>
+                            <div class="profile-badge">Specialist 🔵</div>
+                            <div class="profile-rating">Max Rating: <strong>1406</strong></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="timeline">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">May 2026 — Present</div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="role-title">Software Development Engineer Intern</h3>
+                            <h4 class="company-name">Pinggy Technology <span class="location-badge">Remote</span></h4>
+                        </div>
+                        <ul class="role-bullets">
+                            <li>Developed 3 autonomous Python agents using <strong>Playwright (Patchright)</strong>, <strong>FastAPI</strong>, and <strong>Chrome DevTools Protocol (CDP)</strong> to simultaneously syndicate engineering blogs across multiple platforms, eliminating manual publishing overhead and integrating Gemini and OpenRouter APIs to rephrase blog posts.</li>
+                            <li>Designed a robust error-handling mechanism featuring human handoff points to bypass dynamic authentication challenges (CAPTCHAs/OTPs) without crashing execution loops.</li>
+                            <li>Architected and built a multi-tenant Social Media outreach platform featuring a <strong>React (Redux Toolkit/RTK Query)</strong> frontend, a <strong>Java 21 (Spring Boot 3)</strong> backend orchestrating campaign queues concurrently via PostgreSQL row-locking, and a stateless <strong>Python 3.12 (FastAPI)</strong> worker that executes browser automation workflows with anti-detection pacing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dec 2025 — Jan 2026</div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="role-title">Research Intern</h3>
+                            <h4 class="company-name">Jadavpur University <span class="location-badge">Remote</span></h4>
+                            <span class="instructor-info">Guide: Prof. Debotosh Bhattacharjee</span>
+                        </div>
+                        <ul class="role-bullets">
+                            <li>Developed a deep learning model for medical image anomaly detection, implementing a <strong>Teacher-Student architecture</strong> with **PyTorch** for medical imaging (e.g., Head CT scans), utilizing a pre-trained **Wide ResNet-50-2** as the teacher and a custom-designed **DeResNet** decoder as the student.</li>
+                            <li>Designed and integrated multi-scale skip connections and a custom **Multi-scale Anomaly Consistency (MAC)** loss (combining Cosine Similarity and MSE) to align intermediate representations and enforce reconstruction consistency across multiple spatial scales, achieving an **AUROC of 0.86** and **F1-score of 0.91**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icons">
+                            <span class="folder-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <div class="project-links">
+                                <a href="https://github.com/souvik31" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="#" class="live-link" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Audio Classifier Visualizer</h3>
+                    </div>
+                    <p class="project-desc">
+                        Architected a ResNet-style audio classification CNN using the ESC-50 dataset, achieving 84.75% accuracy. Processed raw waveforms into log-amplitude Mel-spectrograms for robust feature extraction and built an interactive dashboard for real-time inference.
+                    </p>
+                    <div class="project-tech-list">
+                        <span>PyTorch</span>
+                        <span>Torchaudio</span>
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icons">
+                            <span class="folder-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <div class="project-links">
+                                <a href="https://github.com/souvik31" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="#" class="live-link" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">MediBot AI</h3>
+                    </div>
+                    <p class="project-desc">
+                        Engineered a Medical Retrieval-Augmented Generation (RAG) system over custom medical books. Designed a hybrid dual-engine architecture with Sarvam AI for multilingual healthcare assistance and semantic chunk indexing.
+                    </p>
+                    <div class="project-tech-list">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>Pinecone</span>
+                        <span>Flask</span>
+                        <span>Docker</span>
+                        <span>Sarvam AI</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icons">
+                            <span class="folder-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <div class="project-links">
+                                <a href="https://github.com/souvik31" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="#" class="live-link" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">StyleHatch</h3>
+                    </div>
+                    <p class="project-desc">
+                        Developed a full-stack e-commerce platform featuring secure user authentication, product catalogs, order tracking, and administrative workflows. Integrated Stripe for secure checkout payment processing and Redis-based cache optimizations.
+                    </p>
+                    <div class="project-tech-list">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                        <span>Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+        </div>
+        
+        <!-- Skills Flex Container -->
+        <div class="skills-flex-container">
+            <div class="skill-capsule" style="--brand-color: #a8b9cc;">
+                <i class="devicon-c-plain colored"></i>
+                <span>C</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #00599c;">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <span>C++</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #3776ab;">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #f7df1e;">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #00758f;">
+                <i class="devicon-postgresql-plain colored"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #61dafb;">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #339933;">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #828282;">
+                <i class="devicon-express-original"></i>
+                <span>Express.js</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #47a248;">
+                <i class="devicon-mongodb-plain colored"></i>
+                <span>MongoDB</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #4479a1;">
+                <i class="devicon-mysql-plain colored"></i>
+                <span>MySQL</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #ee4c2c;">
+                <i class="devicon-pytorch-original colored"></i>
+                <span>PyTorch</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #013243;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm-1 16.5v-3l-5-2.5V8l5 2.5v3l5 2.5v-3L11 10.5v-3l5-2.5 5 2.5v10l-10 5z"/>
+                </svg>
+                <span>NumPy</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #150458;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+                </svg>
+                <span>Pandas</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #11557c;">
+                <i class="devicon-matplotlib-plain colored"></i>
+                <span>Matplotlib</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #f8991d;">
+                <i class="devicon-scikitlearn-plain colored"></i>
+                <span>Scikit-Learn</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #f05032;">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #ffffff;">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #fcc624;">
+                <i class="devicon-linux-plain"></i>
+                <span>Linux</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #007acc;">
+                <i class="devicon-vscode-plain colored"></i>
+                <span>VS Code</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #ff6c37;">
+                <i class="devicon-postman-plain colored"></i>
+                <span>Postman</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #2c2255;">
+                <i class="devicon-eclipse-plain colored"></i>
+                <span>Eclipse</span>
+            </div>
+            <div class="skill-capsule" style="--brand-color: #107c41;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16.2 2H7.8C4.6 2 2 4.6 2 7.8v8.4C2 19.4 4.6 22 7.8 22h8.4c3.2 0 5.8-2.6 5.8-5.8V7.8C22 4.6 19.4 2 16.2 2zm-1.7 13.5h-2.1L10 11.8l-2.4 3.7H5.5l3.5-5-3.3-5H7.8l2.2 3.4 2.2-3.4h2.1l-3.3 5 3.5 5z"/>
+                </svg>
+                <span>MS Excel</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            
+            <div class="achievements-grid">
+                <!-- Achievement 1 -->
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">📈</div>
+                    <h3 class="achievement-title">JEE Main 2023</h3>
+                    <p class="achievement-desc">Secured a prestigious <strong>99.02 percentile</strong> in JEE Main 2023, showcasing exceptional physics, chemistry, and mathematical analytical skills.</p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3 class="achievement-title">WBJEE 2023</h3>
+                    <p class="achievement-desc">Achieved **State Rank AIR 1486** in WBJEE 2023 examination among more than 1 lakh participating candidates.</p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">☁️</div>
+                    <h3 class="achievement-title">OCI Associate</h3>
+                    <p class="achievement-desc">Oracle Cloud Infrastructure (OCI) 2025 Certified Foundations Associate. Verified cloud architecture and services competency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container contact-container">
+            <div class="contact-info-panel">
+                <h2 class="section-title left-align">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    I am currently open to exciting internship opportunities, collaborative open-source projects, and research contributions. If you'd like to collaborate, have a question, or just want to connect, feel free to drop a message!
+                </p>
+                <div class="contact-details-list">
+                    <a href="mailto:souvik.sarkar3103@gmail.com" class="contact-detail-item">
+                        <span class="detail-icon">📧</span>
+                        <span>souvik.sarkar3103@gmail.com</span>
+                    </a>
+                    <a href="tel:+919735012806" class="contact-detail-item">
+                        <span class="detail-icon">📞</span>
+                        <span>+91 9735012806</span>
+                    </a>
+                    <div class="contact-detail-item">
+                        <span class="detail-icon">📍</span>
+                        <span>Durgapur, West Bengal, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-panel glass-card">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" placeholder="Hi Souvik, I'd love to chat about..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Send Message</button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Souvik Sarkar. All rights reserved.</p>
+            <p class="built-with">Built with HTML, CSS, and JS. Designed for high performance.</p>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js?v=3"></script>
+</body>
+</html>
